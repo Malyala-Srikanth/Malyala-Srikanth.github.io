@@ -1,0 +1,40 @@
+# site settings
+title: Happiness
+subtitle: 
+email: malyala2srikanth@gmail.com
+description: Welcome to my personal website! Here, you'll discover a glimpse into my world, passions, and achievements. Explore my background, projects, and blog for valuable insights. Stay updated with news and events, and feel free to connect with me.
+
+baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author: Malyala Srikanth
+street_address: 212, Kubera Homes, Kakatiya Colony
+city: Warangal
+state: Telangana
+zip_code: 506011
+country: India
+phone: 9092929824
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
+
+# social settings (key must match name of font awesome icon)
+# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
+# Icons are not shown if value is empty
+# You need to restart jekyll for changes to have an effect
+socials:
+  GitHub: https://github.com/MalyalaSrikanth
+  LinkedIn: https://www.linkedin.com/in/malyala-srikanth-768554147/
+  
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
+
+exclude:
+- "*.gemspec"
+- LICENSE.md
+- CONTRIBUTING.md
+- README.md 
