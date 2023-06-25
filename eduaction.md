@@ -27,7 +27,9 @@ nav-menu: true
 		</div>
 	</section>
 	<section>
-    <!-- TO DO: Add Narayana Junior college image -->
+   		<a class="image">
+			<img src="{% link assets/images/narayana.jpeg %}" alt="" data-position="top center" />
+		</a>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
