@@ -30,6 +30,8 @@
 					border-radius: 0;
 					display: block;
 					width: 100%;
+					display: grid;
+					align-items: center;
 				}
 
 				&:before {
@@ -74,6 +76,8 @@
 			> section {
 				> .image {
 					width: 40%;
+					display: grid;
+					align-items: center;
 				}
 
 				> .content {
@@ -86,6 +90,8 @@
 			> section {
 				> .image {
 					width: 45%;
+					display: grid;
+					align-items: center;
 				}
 
 				> .content {
@@ -100,6 +106,8 @@
 
 				> .image {
 					width: 100%;
+					display: grid;
+					align-items: center;
 				}
 
 				> .content {
