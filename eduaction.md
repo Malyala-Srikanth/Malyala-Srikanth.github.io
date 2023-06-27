@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Education
-description: Click here to discover comprehensive information about my educational background.
-image: assets/images/education.jpeg
+title: 
+description: 
+image: assets/images/education.webp
 nav-menu: true
 ---
 
@@ -23,15 +23,19 @@ nav-menu: true
                 2016 - 2020 <br>
                 B.Tech in Civil Engineering <br>
                 GPA - 7.01 / 10 <br>
-				Image Recognition (Guide: Dr. Benny Raphael) Course Project (Jan’19-Apr’19)<br>
-				• Built an image classification model based on a research paper “Striving for Simplicity: The All Convolutional Net”<br>
-				• Applied deep learning techniques like CNN and used Max Pooling Techniques for dimensionality reduction of CNN<br>
-				• Achieved an accuracy of 87.51% by tuning the hyper parameters and optimizing the sigmoid loss function<br>
-				Winter Research Project (Guide: Dr. Gitakrishnan Ramadurai) (Dec’18-Jan’19)<br>
-				• Examined the underlying risk factors that can affect ambulance response times (ART) for trauma incidents, so as to derive interventional measures that can improve the ART<br>
-				• Performed Data Visualisation using matplotlib in python for selecting the variables of MNL Regression model<br>
-				• Developed a Multinomial Regression model for predicting the Ambulance Response Time based on the Variables<br>
-                </p>
+				</p>
+				<h>Image Recognition (Guide: Dr. Benny Raphael) Course Project (Jan’19-Apr’19)</h>
+				<ul>
+					<li>Built an image classification model based on a research paper “Striving for Simplicity: The All Convolutional Net”</li>
+					<li>Applied deep learning techniques like CNN and used Max Pooling Techniques for dimensionality reduction of CNN</li>
+					<li>Achieved an accuracy of 87.51% by tuning the hyper parameters and optimizing the sigmoid loss function</li>
+				</ul>
+				<h>Winter Research Project (Guide: Dr. Gitakrishnan Ramadurai) (Dec’18-Jan’19)</h>
+				<ul>
+					<li>Examined the underlying risk factors that can affect ambulance response times (ART) for trauma incidents, so as to derive interventional measures that can improve the ART</li>
+					<li>Performed Data Visualisation using matplotlib in python for selecting the variables of MNL Regression model</li>
+					<li>Developed a Multinomial Regression model for predicting the Ambulance Response Time based on the Variables</li>
+				</ul>
 			</div>
 		</div>
 	</section>

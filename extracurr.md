@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Extra Curricular Activities
-description: 'Explore My Passions and Activities'
-image: assets/images/football.webp
+title: 
+description: 
+image: assets/images/extracurricular.png
 nav-menu: true
 ---
 
