@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title: Experience
 description: 
 image: assets/images/experience.jpeg
 nav-menu: true

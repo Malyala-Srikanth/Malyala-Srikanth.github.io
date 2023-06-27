@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Extra Curricular Activities
 description: 
 image: assets/images/extracurricular.png
 nav-menu: true

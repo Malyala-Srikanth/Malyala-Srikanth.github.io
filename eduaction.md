@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Education
 description: 
 image: assets/images/education.webp
 nav-menu: true
