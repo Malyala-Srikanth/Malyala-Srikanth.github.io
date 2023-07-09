@@ -20,7 +20,7 @@ nav-menu: true
 				<header class="major">
 					<h3>Football</h3>
 				</header>
-				<p>I ❤ Football. I play Football twice a week. I follow Premier League, La Liga and Bundesliga. I know you will find it weird but, Tottenham Hotspur is my favourite team. Son Heung-Min is my favourite Player. I also love to Watch Borussia Dortmund playing. Marco Reus is a treat to watch sometimes. </p>
+				<p>I ❤ Football. I engage in playing Football two times per week. I am an avid follower of the Premier League, La Liga, and Bundesliga. Although it may seem unusual, my preferred team is Tottenham Hotspur. Among the players, Son Heung-Min holds a special place as my favorite. Additionally, I greatly enjoy observing the performances of Borussia Dortmund, with Marco Reus often delivering captivating displays on the field. </p>
 			</div>
 		</div>
 	</section>
