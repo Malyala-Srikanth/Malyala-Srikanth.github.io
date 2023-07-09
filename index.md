@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Happiness
+title: Home
 landing-title: 'Srikanth Malyala!'
 description: null
 image: null
