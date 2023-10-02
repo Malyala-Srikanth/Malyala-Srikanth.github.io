@@ -20,10 +20,10 @@ nav-menu: true
 			<dt><b>Resume Parser</b></dt>
 			<dd>
 				<ul>
-					<li>Resume Parser extracts relevant entities from resume uploaded in PDF format and converts data into structured form.</li>
-					<li>Successfully integrated ASPOSE, a third-party tool, into the system and established support for the DOCX file format through extensive research.</li>
-					<li>Retrained a topic model that accurately predicts the super-section (such as education or work experience) of a resume based on its text sections and increased its top one accuracy from 81.9 to 89.6 percentage top two accuracy from 92.2 to 96.7 percentage using kfold cross validation. </li>
-					<li>Implemented a BERT-based model for next sentence prediction, utilizing DVC for efficient data tracking and MLflow for metrics tracking and obtained an accuracy of around 93 percent</li>
+					<li>Researched and implemented ASPOSE, a third-party .NET-based tool, to provide support for the DOCX format.</li>
+					<li>Retrained a topic model that accurately predicts the super-section (such as education or work experience) of a chunk of resume based on its text and increased its top one accuracy from 81.9 to 89.6 percentage, top two accuracy from 92.2 to 96.7 percentage using k-fold cross validation.</li>
+					<li>Finetuned a BERT-based model for merging bullets written in multiple lines with classification head on top, utilizing DVC for efficient data tracking and MLflow for metrics tracking and obtained an accuracy of around 93 percent</li>
+					<li>Developed and deployed a scalable API for providing potent action verb recommendations when weaker ones are used in bullet points using MPNet embeddings and OpenSearch</li>
 				</ul>
 			</dd>
 			<dt><b>Best Match (ATS)</b></dt>
@@ -31,7 +31,6 @@ nav-menu: true
 				<ul>
 					<li>Created the initial version of a best-match algorithm, capable of scoring and ranking a set of resumes against a job description (JD) to determine the most suitable candidates.</li>
 					<li>Performed data extraction from multiple internal databases and the internet through web scraping, followed by thorough cleaning and normalization.</li>
-					<li>Collaborated with the Product Manager to design and implement a scoring logic and obtaining an initial MAP of 60 percent</li>
 					<li>Conducted extensive research and successfully utilized OpenSearch to search and score resumes based on relevant entities and skills, obtained through advanced resume and job description parsing techniques.</li> 
 					<li>Designed and implemented a scalable API using Flask and Celery, and deployed it on a robust infrastructure leveraging Docker, Amazon Web Services (AWS) EC2 Container Service (ECS), and AWS Fargate for optimal performance and reliability.</li>
 				</ul>
