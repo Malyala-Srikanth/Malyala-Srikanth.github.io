@@ -1,24 +1,18 @@
-<!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-  {% include head.html %}
+---
+layout: default
+---
 
-  <body>
-    <script type="text/javascript">
-      document.body.classList.add("is-loading");
-    </script>
+{% include lang.html %}
 
-    {% include header.html %} {{ content }}
-    <script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
-    <script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
-    <script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
-    <script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
-    <script src="{{ "assets/js/util.js" | absolute_url }}"></script>
-    <!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
-    <script src="{{ "assets/js/main.js" | absolute_url }}"></script>
-  </body>
-</html>
+<article class="px-1">
+  {% if page.layout == 'page' or page.collection == 'tabs' %}
+    {% assign tab_key = page.title | downcase %}
+    {% assign title = site.data.locales[lang].tabs[tab_key] | default: page.title %}
+    <!-- Removed dynamic title heading -->
+    <div class="content">
+      {{ content }}
+    </div>
+  {% else %}
+    {{ content }}
+  {% endif %}
+</article>

@@ -1,0 +1,38 @@
+.edu-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  margin-bottom: 2em;
+}
+.edu-entry {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 1.5em 1em;
+  flex-wrap: wrap;
+}
+.edu-entry.reverse {
+  flex-direction: row-reverse;
+}
+.edu-entry img {
+  width: 220px;
+  max-width: 90vw;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.edu-entry .edu-content {
+  flex: 1;
+  min-width: 220px;
+}
+@media (max-width: 700px) {
+  .edu-entry, .edu-entry.reverse {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .edu-entry img {
+    margin-bottom: 1em;
+  }
+} 

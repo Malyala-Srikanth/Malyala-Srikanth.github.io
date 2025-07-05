@@ -1,0 +1,15 @@
+.skill-btn {
+  display: inline-block;
+  margin: 0.3em 0.5em 0.3em 0;
+  padding: 0.5em 1.2em;
+  background: #007acc;
+  color: #fff !important;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.skill-btn:hover {
+  background: #005fa3;
+  color: #fff !important;
+} 
