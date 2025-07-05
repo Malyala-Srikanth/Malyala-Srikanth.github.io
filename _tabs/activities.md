@@ -3,7 +3,6 @@ layout: page
 icon: fas fa-trophy
 order: 6
 ---
-![Extracurricular](../assets/images/extracurricular.png)
 
 ## Achievements
 
@@ -17,9 +16,9 @@ order: 6
 <!-- Two -->
 <section id="two" class="spotlights">
     <section>
-        <a class="image">
+        <div class="activity-img">
             <img src="../assets/images/football.webp" alt="Football" data-position="center center" />
-        </a>
+        </div>
         <div class="content">
             <div class="inner">
                 <header class="major">
@@ -30,9 +29,9 @@ order: 6
         </div>
     </section>
     <section>
-        <a class="image">
+        <div class="activity-img">
             <img src="../assets/images/badminton.jpeg" alt="Badminton" data-position="top center" />
-        </a>
+        </div>
         <div class="content">
             <div class="inner">
                 <header class="major">
