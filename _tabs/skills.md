@@ -41,10 +41,10 @@ order: 2
 
 ## Knowledge Areas
 <div>
-<a class="skill-btn">Machine Learning</a>
-<a class="skill-btn">Deep Learning</a>
+<a href="#" class="skill-btn">Machine Learning</a>
+<a href="#" class="skill-btn">Deep Learning</a>
 <a href="https://en.wikipedia.org/wiki/Natural_language_processing" class="skill-btn" target="_blank">NLP (LLM, BERT, MPNet)</a>
 <a href="https://en.wikipedia.org/wiki/Generative_artificial_intelligence" class="skill-btn" target="_blank">Generative AI</a>
 <a href="https://en.wikipedia.org/wiki/Recommender_system" class="skill-btn" target="_blank">Recommender Systems</a>
-<a class="skill-btn">MCP</a>
+<a href="#" class="skill-btn">MCP</a>
 </div>
