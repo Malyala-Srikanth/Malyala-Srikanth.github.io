@@ -59,9 +59,9 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: G-RCP1K14592 # Your Google Analytics 4 ID
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: malyala-srikanth # Your GoatCounter site code
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -73,9 +73,9 @@ analytics:
   fathom:
     id: # fill in your Fathom Site ID
 
-# Page views settings
+# Page views settings - enable to show view counts on posts
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider: goatcounter # supports 'goatcounter' for page view tracking
 
 # Prefer color scheme setting.
 #

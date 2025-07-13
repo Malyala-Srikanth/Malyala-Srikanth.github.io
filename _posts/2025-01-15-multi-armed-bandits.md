@@ -302,37 +302,6 @@ For each product position, the system maintains Beta distributions tracking perf
 - Product D (Organic) shown to high-value customer segments
 - Product C (Nestle A+) emerges as strong performer in position 2
 
-#### Contextual Enhancement
-
-QuickMart enhances the basic bandit with contextual information:
-
-**User Context Features:**
-- Time of day (morning milk purchases vs. evening)
-- Previous purchase history (premium vs. budget preferences)
-- Geographic location (urban premium vs. suburban value)
-- Device type (mobile vs. desktop behavior)
-
-**Contextual Bandit Decision:**
-```python
-# Simplified contextual logic
-if user.segment == "premium" and time_of_day == "morning":
-    # Boost organic and A2 milk products
-    apply_context_boost(["Product D", "Product E"])
-elif user.segment == "budget" and order_value < 500:
-    # Boost value products
-    apply_context_boost(["Product F", "Product B"])
-```
-
-#### Business Impact
-
-After 3 months of implementation:
-- **Search CTR**: Improved from 0.68 to 0.79 (+16%)
-- **Search Conversion**: Increased from 0.31 to 0.38 (+23%)
-- **Average Order Value**: Rose from ₹487 to ₹523 (+7%)
-- **Product Discovery**: 40% increase in clicks on long-tail products
-- **Revenue per Search**: Enhanced from ₹151 to ₹199 (+32%)
-
-The system successfully balanced relevance (showing popular products) with discovery (exposing users to new/profitable items), while continuously learning and adapting to user preferences without manual intervention.
 
 <style>
 .tab-container {
