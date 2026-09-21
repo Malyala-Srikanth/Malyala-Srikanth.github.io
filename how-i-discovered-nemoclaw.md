@@ -2,7 +2,7 @@
 
 ## The Serendipitous Introduction
 
-It all started with a simple LinkedIn message from my friend [Anil Surisetty](https://www.linkedin.com/in/anil-surisetty-79a049184/). We were catching up over virtual coffee when he mentioned this fascinating tool called "Nemoclaw" that had completely transformed his workflow. "You won't believe what you can do with just WhatsApp," he said, his excitement palpable through the screen.
+It all started when I met my friend [Anil Surisetty](https://www.linkedin.com/in/anil-surisetty-79a049184/) at a juice shop after an intense badminton session. He mentioned this fascinating tool called "Nemoclaw" that had completely transformed his workflow. "You won't believe what you can do with just WhatsApp," he said, his excitement palpable.
 
 Intrigued, I asked him to tell me more. What followed was a mind-bending description of an AI assistant that lives inside WhatsApp but can do everything from checking GitHub repos to creating diagrams, all while running in a secure sandboxed environment. The concept sounded like something out of sci-fi - an AI that could help me navigate my digital life without ever leaving my favorite messaging app.
 
