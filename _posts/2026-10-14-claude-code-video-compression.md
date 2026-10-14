@@ -1,12 +1,14 @@
 ---
-title: "Learning Video Compression: From Basics to Python Implementation"
+title: "Exploring Video Compression: A Badminton Break Conversation and Deep Dive"
 date: 2026-10-14
 layout: post
-tags: [video, compression, algorithms, python, image-processing, fundamentals]
+tags: [video, compression, algorithms, python, image-processing, exploration]
 author: Srikanth Malyala
 ---
 
-Video compression is one of the most important techniques in modern media delivery. Whether you're streaming content, storing video archives, or building multimedia applications, understanding compression fundamentals is essential. In this blog, I'll walk through the core concepts of video compression and provide practical Python implementations to help you grasp these concepts from the ground up. I'll also explore how tools like Claude Code can accelerate your learning journey.
+Over the weekend, I was playing badminton with **[Lemon Reddy](https://www.linkedin.com/in/lemonreddy/)**, who works on video compression algorithms at Amazon Prime Video. During a break between sets, he was telling me about how he uses Claude Code to research and optimize compression algorithms—diving deep into papers, experimenting with different approaches, and working through complex constraints. His work fascinated me, and it got me curious: *How does video compression actually work? What are the mathematical principles behind it? Can I understand and implement these concepts myself?*
+
+This blog is my exploration of that curiosity. I started wondering about the fundamentals and dove into understanding video compression from the ground up using Python. Here's what I discovered along the way.
 
 ## Why Video Compression Matters
 
