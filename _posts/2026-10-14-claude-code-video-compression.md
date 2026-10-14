@@ -6,7 +6,7 @@ tags: [video, compression, algorithms, claude-code, optimization, amazon-prime-v
 author: Srikanth Malyala
 ---
 
-Over the weekend, I had the pleasure of playing badminton with a friend who works on video compression algorithms at Amazon Prime Video. During our match, he shared some fascinating insights about how he's leveraging Claude Code to research and optimize compression algorithms—a process that involves navigating complex constraints and implementing cutting-edge techniques. This blog explores what we discussed and the broader landscape of video compression.
+Over the weekend, I had the pleasure of playing badminton with a friend, **[Lemon Reddy](https://www.linkedin.com/in/lemonreddy/)**, who works on video compression algorithms at Amazon Prime Video. During our match, he shared some fascinating insights about how he's leveraging Claude Code to research and optimize compression algorithms—a process that involves navigating complex constraints and implementing cutting-edge techniques. This blog explores what we discussed and the broader landscape of video compression.
 
 ## The Challenge: Optimizing Under Constraints
 

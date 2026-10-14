@@ -8,7 +8,7 @@ author: Srikanth Malyala
 math: true
 ---
 
-I first heard about multi-armed bandits from a friend working at a quick commerce company, who described how they were using these algorithms to optimize their search results in real-time. Intrigued by this concept, I started reading about it and used deep research to curate some important information to understand the concept and its usage. This post explores how Multi-Armed Bandit algorithms can revolutionize search personalization in modern quick commerce platforms.
+I first heard about multi-armed bandits from a friend, **[Kranthi Panduru](https://www.linkedin.com/in/kranthipanduru/)**, working at a quick commerce company, who described how they were using these algorithms to optimize their search results in real-time. Intrigued by this concept, I started reading about it and used deep research to curate some important information to understand the concept and its usage. This post explores how Multi-Armed Bandit algorithms can revolutionize search personalization in modern quick commerce platforms.
 
 ## Part 1: The Quick Commerce Search Dilemma
 
