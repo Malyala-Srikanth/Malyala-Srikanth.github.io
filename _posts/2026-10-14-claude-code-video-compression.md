@@ -25,22 +25,6 @@ Before diving into implementation, it's important to understand the fundamental 
 - **Spatial redundancy**: Similarity within a single frame
 - **Psychovisual redundancy**: Limitations of human vision perception
 
-## Using Python Tools and Claude Code for Learning
-
-When learning video compression, Python is an excellent starting language because:
-- It has rich libraries for image and video processing (OpenCV, Pillow, NumPy)
-- Code is readable and focuses on algorithms rather than low-level details
-- You can quickly prototype and experiment with different approaches
-- You can visualize results easily
-
-**Claude Code can accelerate your learning**:
-
-1. **Understanding Concepts**: Ask Claude to explain compression papers, algorithms, or techniques in simple terms
-2. **Code Generation**: Get Python implementations of compression algorithms with explanations
-3. **Debugging**: When your implementation doesn't work, Claude can help identify issues
-4. **Optimization**: Once basics work, ask Claude for optimization suggestions
-5. **Visualization**: Get help creating visualizations to understand compression effects
-
 ## Core Compression Concepts
 
 Let's start with the fundamental concepts you need to understand video compression:
