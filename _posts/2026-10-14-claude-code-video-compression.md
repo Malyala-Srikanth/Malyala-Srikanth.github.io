@@ -1,12 +1,14 @@
 ---
-title: "Learning Video Compression: From Basics to Python Implementation"
+title: "Exploring Video Compression: A Badminton Break Conversation and Deep Dive"
 date: 2026-10-14
 layout: post
-tags: [video, compression, algorithms, python, image-processing, fundamentals]
+tags: [video, compression, algorithms, python, image-processing, exploration]
 author: Srikanth Malyala
 ---
 
-Video compression is one of the most important techniques in modern media delivery. Whether you're streaming content, storing video archives, or building multimedia applications, understanding compression fundamentals is essential. In this blog, I'll walk through the core concepts of video compression and provide practical Python implementations to help you grasp these concepts from the ground up. I'll also explore how tools like Claude Code can accelerate your learning journey.
+Over the weekend, I was playing badminton with **[Lemon Reddy](https://www.linkedin.com/in/lemonreddy/)**, who works on video compression algorithms at Amazon Prime Video. During a break between sets, he was telling me about how he uses Claude Code to research and optimize compression algorithms—diving deep into papers, experimenting with different approaches, and working through complex constraints. His work fascinated me, and it got me curious: *How does video compression actually work? What are the mathematical principles behind it? Can I understand and implement these concepts myself?*
+
+This blog is my exploration of that curiosity. I started wondering about the fundamentals and dove into understanding video compression from the ground up using Python. Here's what I discovered along the way.
 
 ## Why Video Compression Matters
 
@@ -22,22 +24,6 @@ Before diving into implementation, it's important to understand the fundamental 
 - **Temporal redundancy**: Similarity between consecutive frames
 - **Spatial redundancy**: Similarity within a single frame
 - **Psychovisual redundancy**: Limitations of human vision perception
-
-## Using Python Tools and Claude Code for Learning
-
-When learning video compression, Python is an excellent starting language because:
-- It has rich libraries for image and video processing (OpenCV, Pillow, NumPy)
-- Code is readable and focuses on algorithms rather than low-level details
-- You can quickly prototype and experiment with different approaches
-- You can visualize results easily
-
-**Claude Code can accelerate your learning**:
-
-1. **Understanding Concepts**: Ask Claude to explain compression papers, algorithms, or techniques in simple terms
-2. **Code Generation**: Get Python implementations of compression algorithms with explanations
-3. **Debugging**: When your implementation doesn't work, Claude can help identify issues
-4. **Optimization**: Once basics work, ask Claude for optimization suggestions
-5. **Visualization**: Get help creating visualizations to understand compression effects
 
 ## Core Compression Concepts
 
@@ -443,41 +429,6 @@ This demonstrates key concepts:
 - Chroma subsampling simulation
 - Practical trade-offs between quality and file size
 
-## Next Steps in Your Learning Journey
-
-To deepen your understanding:
-
-1. **Experiment with Different Codecs**: Try H.264, H.265, VP9, and AV1
-2. **Study Motion Estimation**: Understand how frames predict each other
-3. **Learn About Quantization**: Experiment with quality vs size trade-offs
-4. **Explore Video Libraries**: OpenCV, ffmpeg-python, PyAV
-5. **Read Codec Specifications**: H.265 (HEVC) specification for deep understanding
-
-## Using Claude Code for Learning
-
-As you progress, leverage Claude Code:
-- **Ask for clarification**: "Explain how motion estimation works in simple terms"
-- **Debug your implementations**: Share your code and ask for feedback
-- **Explore optimizations**: "Show me a faster way to implement DCT in Python"
-- **Understand papers**: "Summarize this video codec paper in beginner-friendly terms"
-
-The key is using AI as a learning partner, not just a code generator.
-
-## Conclusion
-
-Video compression combines mathematics, signal processing, and practical engineering. Understanding these fundamentals opens doors to building streaming applications, optimizing media storage, and appreciating how billions of video streams flow across the internet daily.
-
-This journey from basic concepts to working implementations is achievable with Python and the right learning resources. Start with the simpler techniques, experiment with the code examples, and gradually work your way up to understanding modern codecs like H.265.
-
-Remember: **[Lemon Reddy](https://www.linkedin.com/in/lemonreddy/)** and others working at scale on video compression started with these fundamentals. The difference between beginners and experts is not magic—it's focused learning and deliberate practice.
-
-Your next steps could be:
-- Run the code examples in this blog
-- Try compressing a sample video and measure the results
-- Pick one compression technique and dive deeper
-- Build your own video processor tool
-
-Video compression is a rich field with endless learning opportunities. Start today!
 
 ## Learning Resources
 
