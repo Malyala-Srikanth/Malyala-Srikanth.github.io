@@ -463,7 +463,7 @@ This demonstrates key concepts:
 
 **Video Codec Standards:**
 - [H.265/HEVC Codec Standard](https://www.itu.int/rec/T-REC-H.265/en) - Modern standard
-- [AV1 Codec Specification](https://aomediacodec.org/) - Next-generation open codec
+- [AV1 Codec Specification](https://aomedia.org/av1-features/get-started/) - Next-generation open codec
 - [VP9 Codec Documentation](https://developers.google.com/media/vp9) - Open-source codec
 - [H.264 Standard](https://www.itu.int/rec/T-REC-H.264/en) - Widely used baseline
 
@@ -471,7 +471,6 @@ This demonstrates key concepts:
 - [Video Compression Fundamentals](https://en.wikipedia.org/wiki/Video_compression) - Good overview
 - [DCT and Quantization](https://en.wikipedia.org/wiki/JPEG) - Understand transform coding
 - [Huffman Coding Tutorial](https://en.wikipedia.org/wiki/Huffman_coding) - Entropy encoding
-- [3Blue1Brown on DCT](https://www.youtube.com/watch?v=v7ScGV5128A) - Visual explanation of transforms
 
 **Tools to Experiment With:**
 - FFmpeg - Industry-standard video processing tool
