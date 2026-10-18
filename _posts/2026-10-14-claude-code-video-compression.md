@@ -1,5 +1,5 @@
 ---
-title: "Exploring Video Compression: A Badminton Break Conversation and Deep Dive"
+title: "Exploring Video Compression"
 date: 2026-10-14
 layout: post
 tags: [video, compression, algorithms, python, image-processing, exploration]
@@ -10,7 +10,7 @@ Over the weekend, I was playing badminton with **[Lemon Reddy](https://www.linke
 
 This blog is my exploration of that curiosity. I started wondering about the fundamentals and dove into understanding video compression from the ground up using Python. Here's what I discovered along the way.
 
-## Why Video Compression Matters
+## Why It Matters
 
 Video is data-intensive. A single minute of 1080p video at 30fps can be several gigabytes without compression. Video compression tackles this challenge by:
 
@@ -25,7 +25,7 @@ Before diving into implementation, it's important to understand the fundamental 
 - **Spatial redundancy**: Similarity within a single frame
 - **Psychovisual redundancy**: Limitations of human vision perception
 
-## Core Compression Concepts
+## Core Concepts
 
 Let's start with the fundamental concepts you need to understand video compression:
 
@@ -73,17 +73,40 @@ Human eyes are much more sensitive to brightness changes than color changes:
 - **4:2:2**: Half horizontal color resolution
 - **4:2:0**: Half resolution in both dimensions (standard for most streaming)
 
-### 3. Chroma Subsampling
-Human eyes are more sensitive to brightness than color variations:
-- **4:4:4**: Full resolution for luminance and chrominance (no subsampling)
-- **4:2:2**: Half horizontal color resolution
-- **4:2:0**: Half resolution in both directions (most common)
+### 5. Quantization
 
-## Python Implementation: From Basics to Practice
+Quantization is the step where most of the actual loss happens. Transform coding (like the DCT) by itself is reversible: it just rewrites 64 pixel values as 64 frequency coefficients. Nothing is thrown away until quantization.
+
+The idea is simple: **divide each coefficient by a step size and round to the nearest integer.** The decoder multiplies back by the same step size, but the rounding error is gone for good.
+
+```
+coefficient = 87,  step = 16  →  87 / 16 = 5.4  →  stored as 5
+decoder:        5 × 16 = 80   (error of 7, which we accept)
+
+coefficient = 6,   step = 16  →  6 / 16 = 0.4   →  stored as 0
+decoder:        0 × 16 = 0    (small value erased entirely)
+```
+
+Two things make this effective:
+
+- **Bigger step size = coarser values.** More coefficients round to zero, which shrinks the file but adds visible artifacts like blockiness and banding. This single knob is what the "quality" or QP (quantization parameter) setting in an encoder controls.
+- **The step size differs per frequency.** Low-frequency coefficients (smooth gradients, overall shape) carry what the eye notices most, so they get small steps. High-frequency coefficients (fine detail, noise) are less noticeable, so they get large steps and mostly become zero. That's what the quality matrix in the code below is.
+
+The long runs of zeros left behind are what make the next stages, run-length and Huffman (entropy) coding, so effective.
+
+## Where Codecs Are Today
+
+The techniques above are the foundation of every modern codec, and the codecs differ mainly in how cleverly they apply them (bigger and more flexible blocks, better prediction, smarter entropy coding).
+
+- **H.264/AVC** is still the most widely compatible baseline.
+- **VP9 and AV1** are what most large-scale streaming runs on today. They are royalty-free and save significant bitrate over H.264 at the same quality. VP9 is widely used on YouTube, and AV1 adoption is growing quickly as hardware decoding becomes common.
+- **AV2** is the next-generation standard from the Alliance for Open Media, the successor to AV1. It is not yet what services stream today.
+
+## Python Basics
 
 Now let's implement these concepts in Python to solidify your understanding:
 
-### Transform Coding Example
+### Transform Coding
 {% raw %}
 <div>
   <div style="margin-bottom: 1em;">
@@ -112,8 +135,8 @@ pixel_block = np.array([
 # Apply 2D DCT
 dct_block = dct(dct(pixel_block.astype(float), axis=0), axis=1)
 
-# Quantization (dividing by quality matrix)
-# Higher values = more aggressive compression
+# Quantization: divide each coefficient by its step size, then round
+# Larger step sizes = more zeros = more aggressive compression
 quality_matrix = np.array([
     [16, 11, 10, 16, 24, 40, 51, 61],
     [12, 12, 14, 19, 26, 58, 60, 55],
@@ -323,7 +346,7 @@ function showCompressionTab(tabId) {
 </style>
 {% endraw %}
 
-### Working with OpenCV and NumPy
+### OpenCV and NumPy
 
 Here's a practical example using OpenCV to work with video frames:
 
@@ -363,7 +386,7 @@ This demonstrates basic concepts:
 - Color space conversion (RGB → YUV helps with chroma subsampling)
 - Resizing trades quality for file size
 
-## Building Your First Video Processor
+## A Simple Video Processor
 
 Here's a practical project to apply what you've learned:
 
